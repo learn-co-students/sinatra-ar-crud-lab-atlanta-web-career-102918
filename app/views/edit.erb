@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <p> Here's what we got now</p>
+  <p>The post name is <br><%=@post.name%> </p>
+
+  <p>And here is what is says<br><%=@post.content%> </p>
+  <form method="POST" action="/posts/<%=@post.id%>">
+     <input id="hidden" type="hidden" name="_method" value="patch">
+  <p><input id="text" name="name" placeholder="New name"></p>
+  <p><input id="text" name="content" placeholder="New content here"></p>
+  <p>  <input type="submit" value = "submit"> </p>
+
+  </form>
+</body
+
+</html>
